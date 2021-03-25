@@ -24,4 +24,11 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.fragmentContainer, NavigationFragment())
             .commit()
     }
+
+
+    private fun openFragmentReplaceWithBackStack() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainer, NavigationFragment())
+            .commit()
+    }
 }
