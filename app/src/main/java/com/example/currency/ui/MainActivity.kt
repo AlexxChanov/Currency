@@ -10,8 +10,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        openFragment()
+    }
+
+    private fun openFragment() {
         supportFragmentManager.beginTransaction()
-            .add(R.id.fragmentContainer,NavigationFragment())
+            .add(R.id.fragmentContainer, NavigationFragment())
             .commit()
     }
 }
