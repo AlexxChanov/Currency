@@ -18,4 +18,10 @@ class MainActivity : AppCompatActivity() {
             .add(R.id.fragmentContainer, NavigationFragment())
             .commit()
     }
+
+    private fun openFragmentReplace() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainer, NavigationFragment())
+            .commit()
+    }
 }
